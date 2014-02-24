@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Baza aut</string>
+    <string name="action_settings">Settings</string>
+    <string name="tytul">Baza samochodów</string>
+    <string name="wejscie">Otwórz bazę</string>
+    <string name="wyjdz">Wyjdź</string>
+    <string name="title_activity_baza">Baza</string>
+    <string name="powrotDoMenu">Wróć do menu</string>
+    <string name="dodaj">Dodaj samochód</string>
+    <string name="title_activity_dodaj_samochod">DodajSamochod</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="markaTekst">Marka:</string>
+    <string name="modelTekst">Model:</string>
+    <string name="pojSilnikaTekst">Pojemność silnika:</string>
+    <string name="mocTekst">Moc (KM):</string>
+    <string name="nadwozieTekst">Typ nadwozia:</string>
+    <string name="dodajSamochod">Dodaj samochód</string>
+    <string name="wyswietl">Pokaż samochody</string>
+
+    <string-array name="nadwozia">
+        <item>Coupe</item>
+        <item>Hatchback</item>
+        <item>Kabriolet</item>
+        <item>Kombi</item>
+        <item>Limuzyna</item>
+        <item>Minivan</item>
+        <item>Pick-up</item>
+        <item>Sedan</item>
+        <item>Van</item>
+    </string-array>
+
+    <string name="title_activity_lista_samochodow">ListaSamochodow</string>
+
+</resources>
