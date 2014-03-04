@@ -49,6 +49,14 @@
             android:name="com.example.bazaaut.ListaSamochodow"
             android:label="@string/title_activity_lista_samochodow" >
         </activity>
+        <activity
+            android:name="com.example.bazaaut.ModelSamochodu"
+            android:label="@string/title_activity_marka_samochodu" >
+        </activity>
+        <activity
+            android:name="com.example.bazaaut.UsunSamochod"
+            android:label="@string/title_activity_usun_samochod" >
+        </activity>
     </application>
 
 </manifest>

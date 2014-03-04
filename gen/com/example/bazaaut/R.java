@@ -28,8 +28,10 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout01=0x7f09000e;
-        public static final int action_settings=0x7f090010;
+        public static final int action_settings=0x7f090013;
+        public static final int dialogButtonOK=0x7f090012;
         public static final int dodaj=0x7f090001;
+        public static final int image=0x7f090010;
         public static final int marka=0x7f090004;
         public static final int markaPole=0x7f090005;
         public static final int moc=0x7f09000a;
@@ -40,6 +42,7 @@ public final class R {
         public static final int nadwozieLista=0x7f09000d;
         public static final int pojSilnika=0x7f090008;
         public static final int pojSilnikaPole=0x7f090009;
+        public static final int text=0x7f090011;
         public static final int tytul=0x7f090000;
         public static final int wejscie=0x7f09000f;
         public static final int wyjdz=0x7f090003;
@@ -50,12 +53,17 @@ public final class R {
         public static final int activity_dodaj_samochod=0x7f030001;
         public static final int activity_lista_samochodow=0x7f030002;
         public static final int activity_main=0x7f030003;
+        public static final int activity_model_samochodu=0x7f030004;
+        public static final int dialog=0x7f030005;
+        public static final int row=0x7f030006;
     }
     public static final class menu {
         public static final int baza=0x7f080000;
         public static final int dodaj_samochod=0x7f080001;
         public static final int lista_samochodow=0x7f080002;
         public static final int main=0x7f080003;
+        public static final int marka_samochodu=0x7f080004;
+        public static final int usun_samochod=0x7f080005;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
@@ -72,6 +80,8 @@ public final class R {
         public static final int title_activity_baza=0x7f050005;
         public static final int title_activity_dodaj_samochod=0x7f050008;
         public static final int title_activity_lista_samochodow=0x7f050011;
+        public static final int title_activity_marka_samochodu=0x7f050012;
+        public static final int title_activity_usun_samochod=0x7f050013;
         public static final int tytul=0x7f050002;
         public static final int wejscie=0x7f050003;
         public static final int wyjdz=0x7f050004;

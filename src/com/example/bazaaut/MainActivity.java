@@ -40,9 +40,13 @@ public class MainActivity extends Activity {
 		Samochod a = new Samochod(this, "Opel", "Corsa", "1.4", "100", "Hatchback");
 		Samochod b = new Samochod(this, "Opel", "Astra", "1.6", "115", "Sedan");
 		Samochod c = new Samochod(this, "Audi", "RS5", "4.2", "450", "Coupe");
+		Samochod d = new Samochod(this, "BMW", "X1", "2.0", "184", "SAV");
+		Samochod e = new Samochod(this, "Maserati", "Gran Turismo", "4.4", "470", "Coupe");
 		a.save();
 		b.save();
 		c.save();
+		d.save();
+		e.save();
 	}
 
 	@Override

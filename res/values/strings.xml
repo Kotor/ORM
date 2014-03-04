@@ -29,8 +29,12 @@
         <item>Pick-up</item>
         <item>Sedan</item>
         <item>Van</item>
+        <item>SAV</item>
+        <item>SUV</item>
     </string-array>
 
     <string name="title_activity_lista_samochodow">ListaSamochodow</string>
+    <string name="title_activity_marka_samochodu">MarkaSamochodu</string>
+    <string name="title_activity_usun_samochod">UsunSamochod</string>
 
 </resources>
