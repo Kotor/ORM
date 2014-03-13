@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 public class ListAdapter extends ArrayAdapter<String> {
 
 	public ListAdapter(Context context) {
@@ -19,8 +21,8 @@ public class ListAdapter extends ArrayAdapter<String> {
 		convertView = LayoutInflater.from(getContext()).inflate(R.layout.row, null);
 		viewHolder = new ViewHolder();
 		viewHolder.text = (TextView) convertView.findViewById(R.id.tytul);
-		// TO DO parse marka
-		viewHolder.text.setText(/* marka */));
+		Marki jobj = new Gson().fromJson(getItem(position), Marki.class);
+		viewHolder.text.setText(jobj.getNazwa());
 		return convertView;
 	}
 	

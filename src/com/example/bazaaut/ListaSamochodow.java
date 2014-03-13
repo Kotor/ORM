@@ -4,19 +4,18 @@ import java.util.List;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
-import com.orm.query.Condition;
 import com.orm.query.Select;
 
 public class ListaSamochodow extends ListActivity {
@@ -27,7 +26,7 @@ public class ListaSamochodow extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lista_samochodow);
-		
+				
 		List<Samochod> marka = Select.from(Samochod.class).groupBy("marka").list();
 		
 		//List<Samochod> auta = Select.from(Samochod.class).where(Condition.prop("model").eq("Astra")).list();

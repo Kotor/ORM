@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232323"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,6 +13,8 @@
         android:id="@+id/tytul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFF"
         android:text="@string/tytul" />
     
     <Button
@@ -21,6 +24,8 @@
         android:layout_below="@+id/tytul"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:textColor="#FFF"
         android:text="@string/dodaj" />
     <Button
         android:id="@+id/wyswietl"
@@ -29,6 +34,8 @@
         android:layout_below="@+id/dodaj"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:textColor="#FFF"
         android:text="@string/wyswietl" />    
     <Button
         android:id="@+id/wyjdz"
@@ -37,6 +44,8 @@
         android:layout_below="@+id/wyswietl"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:textColor="#FFF"
         android:text="@string/powrotDoMenu" />
 
 </RelativeLayout>
