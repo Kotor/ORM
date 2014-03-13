@@ -19,7 +19,8 @@ public class ListAdapter extends ArrayAdapter<String> {
 		convertView = LayoutInflater.from(getContext()).inflate(R.layout.row, null);
 		viewHolder = new ViewHolder();
 		viewHolder.text = (TextView) convertView.findViewById(R.id.tytul);
-		viewHolder.text.setText(getItem(position));
+		// TO DO parse marka
+		viewHolder.text.setText(/* marka */));
 		return convertView;
 	}
 	

@@ -16,9 +16,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		Samochod.deleteAll(Samochod.class);
-        stworzBaze();
-		
 		przyciskStart = (Button)findViewById(R.id.wejscie);
 		przyciskStart.setOnClickListener(new OnClickListener() {
                 public void onClick(View v) {
@@ -35,20 +32,7 @@ public class MainActivity extends Activity {
                 }
         });
 	}
-
-	private void stworzBaze() {
-		Samochod a = new Samochod(this, "Opel", "Corsa", "1.4", "100", "Hatchback");
-		Samochod b = new Samochod(this, "Opel", "Astra", "1.6", "115", "Sedan");
-		Samochod c = new Samochod(this, "Audi", "RS5", "4.2", "450", "Coupe");
-		Samochod d = new Samochod(this, "BMW", "X1", "2.0", "184", "SAV");
-		Samochod e = new Samochod(this, "Maserati", "Gran Turismo", "4.4", "470", "Coupe");
-		a.save();
-		b.save();
-		c.save();
-		d.save();
-		e.save();
-	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.

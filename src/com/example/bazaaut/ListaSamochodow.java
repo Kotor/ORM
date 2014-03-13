@@ -5,12 +5,17 @@ import java.util.List;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
 import com.orm.query.Condition;
 import com.orm.query.Select;
 
@@ -29,10 +34,35 @@ public class ListaSamochodow extends ListActivity {
 		//setListAdapter(new ArrayAdapter<Samochod>(this,android.R.layout.simple_list_item_1, auta));
 		
 		adapter = new ListAdapter(this);
-		for (Samochod s : marka) {
-			adapter.add(s.getMarka());			
-		}
-		setListAdapter(adapter);
+		
+		
+		
+		
+		
+		
+		
+		Ion.with(getBaseContext(), "http://www.kubakot.pl/php/plik.json")
+        .asJsonObject()
+        .setCallback(new FutureCallback<JsonObject>() {
+           @Override
+            public void onCompleted(Exception e, JsonObject result) {
+        	   if (e != null) {
+            	   Log.i("blad", e.getLocalizedMessage());
+               } else {
+            	   try {
+            	   Log.i("Json", result.toString());
+            	   JsonArray marki = result.getAsJsonArray("marki");
+            	   for (int i = 0; i<marki.size(); i++) {
+            		   Log.i("auto", "asd");
+            		   adapter.add(marki.get(i).toString());
+            		   setListAdapter(adapter);
+            	   }
+            	   } catch(Exception i) {
+            		   Log.i("blad2", i.getLocalizedMessage());
+            	   }
+               }
+            }
+        });
 	}
 
 	@Override
