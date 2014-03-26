@@ -3,7 +3,7 @@
 
     <string name="app_name">Baza aut</string>
     <string name="action_settings">Settings</string>
-    <string name="tytul">Baza samochodów</string>
+    <string name="tytul">BAZA SAMOCHODÓW</string>
     <string name="wejscie">Otwórz bazę</string>
     <string name="wyjdz">Wyjdź</string>
     <string name="title_activity_baza">Baza</string>

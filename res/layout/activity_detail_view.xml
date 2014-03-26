@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2e2e2e"
+    >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+    
+    <!--  TYTUL WRAPPER -->
+    
+    <TextView
+		        android:id="@+id/model"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"	        	
+	        	android:background="@drawable/background_title"
+	        	android:textSize="20sp"
+		        android:textColor="#FFF"
+		        android:gravity="center"
+		        android:paddingTop="18dp"
+			    android:paddingLeft="30dp"
+			    android:paddingBottom="18dp"
+			    android:paddingRight="30dp"/>
+    
+    <!-- OPIS -->
+    <TextView
+		        android:id="@+id/silnik"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/background_border"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"   
+		        android:gravity="center" 			
+		        android:paddingTop="20dp"
+	    		android:paddingBottom="20dp"
+	    		android:paddingLeft="30dp"
+	    		android:paddingRight="30dp"
+	    		android:autoLink="web"/>
+     
+    <!--  TERMIN -->
+    
+    <TextView
+		        android:id="@+id/nadwozie"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/background_title"
+		        android:textSize="16sp"
+		        android:textColor="#FFF"
+		        android:gravity="center"
+		        android:paddingTop="20dp"
+	    		android:paddingBottom="20dp"
+	    		android:paddingLeft="30dp"
+	    		android:paddingRight="30dp"/>
+
+</TableLayout>
+</ScrollView>

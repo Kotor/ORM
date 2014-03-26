@@ -9,7 +9,7 @@
                 android:layout_height="fill_parent" 
                 android:layout_weight="1"
                 android:drawSelectorOnTop="false"
-                android:divider="#2e2e2e"
+                android:divider="#3e3e3e"
                 android:dividerHeight="2px">
 
         </ListView>

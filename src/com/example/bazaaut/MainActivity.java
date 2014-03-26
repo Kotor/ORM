@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
                 public void onClick(View v) {
                 	Intent intent = new Intent(MainActivity.this, Baza.class);  
                 	startActivity(intent);
-                	
+                	overridePendingTransition(R.anim.from_right, R.anim.to_left);                	
                 }
         });        
         przyciskWyjscie = (Button)findViewById(R.id.wyjdz);

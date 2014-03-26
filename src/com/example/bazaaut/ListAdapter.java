@@ -21,8 +21,8 @@ public class ListAdapter extends ArrayAdapter<String> {
 		convertView = LayoutInflater.from(getContext()).inflate(R.layout.row, null);
 		viewHolder = new ViewHolder();
 		viewHolder.text = (TextView) convertView.findViewById(R.id.tytul);
-		Marki jobj = new Gson().fromJson(getItem(position), Marki.class);
-		viewHolder.text.setText(jobj.getNazwa());
+		Marki marka = new Gson().fromJson(getItem(position), Marki.class);
+		viewHolder.text.setText(marka.getNazwa());
 		return convertView;
 	}
 	
